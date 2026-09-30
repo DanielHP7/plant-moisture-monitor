@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plant Moisture Monitor</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+  <style>
+    body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; background: #f4f7fb; font-family: system-ui, sans-serif; color: #333; }
+    main canvas { display: block; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+    p { margin: 0; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main></main>
+  <p>Live data from the ESP32 via MQTT. No sensor online? Press <b>1</b>, <b>2</b> or <b>3</b> to preview the states.</p>
+  <script src="sketch.js"></script>
+</body>
+</html>
